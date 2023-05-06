@@ -1,0 +1,9 @@
+id,name,age,grade
+1,Thái Nữ Bình An,12,6
+2,Châu Ngọc Thạch Anh,13,7
+3,Hồ Khánh Chi,15,9
+4,Nguyễn Ngọc Hạnh,14,8
+5,Nguyễn Minh Phước,13,7
+6,Dương Chí Thành,12,6
+7,Khương Thái Trân,14,8
+8,Trương Phụng Y,15,9
