@@ -22,6 +22,15 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $name = $_POST['name'];
         $age = $_POST['age'];
         $grade = $_POST['grade'];
+        $add = fopen('list-student.txt', 'a');
+
+
+// Write the form data to the file
+$data = $id.",".$name.",".$age.",".$grade. "\n";
+fwrite($add, $data);
+
+// Close the file
+fclose($add);
     }
     ?>  
    <?php
