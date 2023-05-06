@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     ?>  
    <?php
 
-$handle = fopen('data.txt', 'r');
+$handle = fopen('list-student.txt', 'r');
 $table = '<table>';
 while (!feof($handle)) {
   
