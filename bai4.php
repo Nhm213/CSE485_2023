@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="all.css">
+    <script src="includes/all.js"></script>
+
+  
 </head>
 <body >
 
     <form action="bai4.php" method="post" >
         Id: <input type="text"  name="id">
         Name:<input type="text" name="name" >
-        Age: <input type="text" name="age">
-        Grade:<input type="text" name="grade">
+        Age: <input type="text" name="age" id="age" onkeypress="return checkNumber(event)">
+        Grade:<input type="text" name="grade" onkeypress="return checkNumber(event)">
         <button type="submit" style="width:100%"></button>
 </form>
 <?php
@@ -22,14 +24,15 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $name = $_POST['name'];
         $age = $_POST['age'];
         $grade = $_POST['grade'];
-        $add = fopen('list-student.txt', 'a');
+        
+        
+$add = fopen('list-student.txt', 'a');
 
 
-// Write the form data to the file
 $data = $id.",".$name.",".$age.",".$grade. "\n";
+
 fwrite($add, $data);
 
-// Close the file
 fclose($add);
     }
     ?>  
