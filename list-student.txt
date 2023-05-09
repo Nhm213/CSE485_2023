@@ -8,3 +8,5 @@ id,name,age,grade
 7,Khương Thái Trân,14,8
 8,Trương Phụng Y,15,9
 9,mai ngọc duy,11,3
+
+10,mai ngọc duy,3,3
